@@ -31,16 +31,16 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login_AirSysten));
             this.label3 = new System.Windows.Forms.Label();
-            this.texUsuario = new System.Windows.Forms.TextBox();
+            this.loginUsuario = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.loginSenha = new System.Windows.Forms.TextBox();
             this.Usuário = new System.Windows.Forms.Label();
             this.Senha = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.loginNU = new System.Windows.Forms.Button();
+            this.lbtnSair = new System.Windows.Forms.Button();
+            this.loginBtnEntrar = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -57,13 +57,13 @@
             this.label3.TabIndex = 2;
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // texUsuario
+            // loginUsuario
             // 
-            this.texUsuario.Location = new System.Drawing.Point(423, 171);
-            this.texUsuario.Name = "texUsuario";
-            this.texUsuario.Size = new System.Drawing.Size(202, 20);
-            this.texUsuario.TabIndex = 3;
-            this.texUsuario.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.loginUsuario.Location = new System.Drawing.Point(423, 171);
+            this.loginUsuario.Name = "loginUsuario";
+            this.loginUsuario.Size = new System.Drawing.Size(202, 20);
+            this.loginUsuario.TabIndex = 3;
+            this.loginUsuario.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // pictureBox2
             // 
@@ -76,12 +76,12 @@
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
-            // textBox1
+            // loginSenha
             // 
-            this.textBox1.Location = new System.Drawing.Point(423, 236);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(202, 20);
-            this.textBox1.TabIndex = 6;
+            this.loginSenha.Location = new System.Drawing.Point(423, 236);
+            this.loginSenha.Name = "loginSenha";
+            this.loginSenha.Size = new System.Drawing.Size(202, 20);
+            this.loginSenha.TabIndex = 6;
             // 
             // Usuário
             // 
@@ -131,35 +131,35 @@
             this.listBox1.TabIndex = 10;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged_1);
             // 
-            // button1
+            // loginNU
             // 
-            this.button1.Location = new System.Drawing.Point(528, 351);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(108, 23);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Novo usuário";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.loginNU.Location = new System.Drawing.Point(528, 351);
+            this.loginNU.Name = "loginNU";
+            this.loginNU.Size = new System.Drawing.Size(108, 23);
+            this.loginNU.TabIndex = 11;
+            this.loginNU.Text = "Novo usuário";
+            this.loginNU.UseVisualStyleBackColor = true;
+            this.loginNU.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // lbtnSair
             // 
-            this.button2.Location = new System.Drawing.Point(487, 351);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(35, 23);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "Sair";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.lbtnSair.Location = new System.Drawing.Point(487, 351);
+            this.lbtnSair.Name = "lbtnSair";
+            this.lbtnSair.Size = new System.Drawing.Size(35, 23);
+            this.lbtnSair.TabIndex = 12;
+            this.lbtnSair.Text = "Sair";
+            this.lbtnSair.UseVisualStyleBackColor = true;
+            this.lbtnSair.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // loginBtnEntrar
             // 
-            this.button3.Location = new System.Drawing.Point(427, 351);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(54, 23);
-            this.button3.TabIndex = 13;
-            this.button3.Text = "Entrar";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.loginBtnEntrar.Location = new System.Drawing.Point(427, 351);
+            this.loginBtnEntrar.Name = "loginBtnEntrar";
+            this.loginBtnEntrar.Size = new System.Drawing.Size(54, 23);
+            this.loginBtnEntrar.TabIndex = 13;
+            this.loginBtnEntrar.Text = "Entrar";
+            this.loginBtnEntrar.UseVisualStyleBackColor = true;
+            this.loginBtnEntrar.Click += new System.EventHandler(this.button3_Click);
             // 
             // pictureBox1
             // 
@@ -179,17 +179,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(648, 384);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.loginBtnEntrar);
+            this.Controls.Add(this.lbtnSair);
+            this.Controls.Add(this.loginNU);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Senha);
             this.Controls.Add(this.Usuário);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.loginSenha);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.texUsuario);
+            this.Controls.Add(this.loginUsuario);
             this.Controls.Add(this.label3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Login_AirSysten";
@@ -204,16 +204,16 @@
 
         #endregion
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox texUsuario;
+        private System.Windows.Forms.TextBox loginUsuario;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox loginSenha;
         private System.Windows.Forms.Label Usuário;
         private System.Windows.Forms.Label Senha;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button loginNU;
+        private System.Windows.Forms.Button lbtnSair;
+        private System.Windows.Forms.Button loginBtnEntrar;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
