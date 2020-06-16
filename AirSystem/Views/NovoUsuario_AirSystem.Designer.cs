@@ -35,18 +35,19 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.texUsuario = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.nuConfSenha = new System.Windows.Forms.TextBox();
+            this.nuUsuario = new System.Windows.Forms.TextBox();
+            this.nuSenha = new System.Windows.Forms.TextBox();
+            this.nuRua = new System.Windows.Forms.TextBox();
+            this.nuNumero = new System.Windows.Forms.TextBox();
+            this.nuNome = new System.Windows.Forms.TextBox();
+            this.nuSobrenome = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.nubtnAlterar = new System.Windows.Forms.Button();
+            this.nubtnDeletar = new System.Windows.Forms.Button();
+            this.nubtnCadastro = new System.Windows.Forms.Button();
+            this.nuAdm = new System.Windows.Forms.CheckBox();
+            this.nuData = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -127,55 +128,58 @@
             this.label6.TabIndex = 6;
             this.label6.Text = "Confirmar Senha";
             // 
-            // texUsuario
+            // nuConfSenha
             // 
-            this.texUsuario.Location = new System.Drawing.Point(192, 295);
-            this.texUsuario.Name = "texUsuario";
-            this.texUsuario.Size = new System.Drawing.Size(134, 20);
-            this.texUsuario.TabIndex = 7;
-            this.texUsuario.TextChanged += new System.EventHandler(this.texUsuario_TextChanged);
+            this.nuConfSenha.Location = new System.Drawing.Point(192, 295);
+            this.nuConfSenha.Name = "nuConfSenha";
+            this.nuConfSenha.Size = new System.Drawing.Size(134, 20);
+            this.nuConfSenha.TabIndex = 7;
+            this.nuConfSenha.TextChanged += new System.EventHandler(this.texUsuario_TextChanged);
             // 
-            // textBox1
+            // nuUsuario
             // 
-            this.textBox1.Location = new System.Drawing.Point(192, 189);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(134, 20);
-            this.textBox1.TabIndex = 8;
+            this.nuUsuario.Location = new System.Drawing.Point(192, 189);
+            this.nuUsuario.Name = "nuUsuario";
+            this.nuUsuario.Size = new System.Drawing.Size(134, 20);
+            this.nuUsuario.TabIndex = 8;
+            this.nuUsuario.TextChanged += new System.EventHandler(this.nuUsuario_TextChanged);
             // 
-            // textBox2
+            // nuSenha
             // 
-            this.textBox2.Location = new System.Drawing.Point(192, 242);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(134, 20);
-            this.textBox2.TabIndex = 9;
+            this.nuSenha.Location = new System.Drawing.Point(192, 242);
+            this.nuSenha.Name = "nuSenha";
+            this.nuSenha.Size = new System.Drawing.Size(134, 20);
+            this.nuSenha.TabIndex = 9;
             // 
-            // textBox3
+            // nuRua
             // 
-            this.textBox3.Location = new System.Drawing.Point(192, 89);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(173, 20);
-            this.textBox3.TabIndex = 10;
+            this.nuRua.Location = new System.Drawing.Point(192, 89);
+            this.nuRua.Name = "nuRua";
+            this.nuRua.Size = new System.Drawing.Size(173, 20);
+            this.nuRua.TabIndex = 10;
+            this.nuRua.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
-            // textBox4
+            // nuNumero
             // 
-            this.textBox4.Location = new System.Drawing.Point(397, 90);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(59, 20);
-            this.textBox4.TabIndex = 11;
+            this.nuNumero.Location = new System.Drawing.Point(397, 90);
+            this.nuNumero.Name = "nuNumero";
+            this.nuNumero.Size = new System.Drawing.Size(59, 20);
+            this.nuNumero.TabIndex = 11;
             // 
-            // textBox5
+            // nuNome
             // 
-            this.textBox5.Location = new System.Drawing.Point(192, 46);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(119, 20);
-            this.textBox5.TabIndex = 12;
+            this.nuNome.Location = new System.Drawing.Point(192, 46);
+            this.nuNome.Name = "nuNome";
+            this.nuNome.Size = new System.Drawing.Size(119, 20);
+            this.nuNome.TabIndex = 12;
+            this.nuNome.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
-            // textBox6
+            // nuSobrenome
             // 
-            this.textBox6.Location = new System.Drawing.Point(332, 46);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(124, 20);
-            this.textBox6.TabIndex = 13;
+            this.nuSobrenome.Location = new System.Drawing.Point(332, 46);
+            this.nuSobrenome.Name = "nuSobrenome";
+            this.nuSobrenome.Size = new System.Drawing.Size(124, 20);
+            this.nuSobrenome.TabIndex = 13;
             // 
             // pictureBox1
             // 
@@ -185,49 +189,62 @@
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
             // 
-            // button1
+            // nubtnAlterar
             // 
-            this.button1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(541, 157);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(59, 23);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "Alterar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.nubtnAlterar.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nubtnAlterar.Location = new System.Drawing.Point(541, 157);
+            this.nubtnAlterar.Name = "nubtnAlterar";
+            this.nubtnAlterar.Size = new System.Drawing.Size(59, 23);
+            this.nubtnAlterar.TabIndex = 15;
+            this.nubtnAlterar.Text = "Alterar";
+            this.nubtnAlterar.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // nubtnDeletar
             // 
-            this.button2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(602, 157);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(67, 23);
-            this.button2.TabIndex = 16;
-            this.button2.Text = "Deletar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.nubtnDeletar.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nubtnDeletar.Location = new System.Drawing.Point(602, 157);
+            this.nubtnDeletar.Name = "nubtnDeletar";
+            this.nubtnDeletar.Size = new System.Drawing.Size(67, 23);
+            this.nubtnDeletar.TabIndex = 16;
+            this.nubtnDeletar.Text = "Deletar";
+            this.nubtnDeletar.UseVisualStyleBackColor = true;
+            this.nubtnDeletar.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // nubtnCadastro
             // 
-            this.button3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(192, 348);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(123, 30);
-            this.button3.TabIndex = 17;
-            this.button3.Text = "Cadastrar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.nubtnCadastro.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nubtnCadastro.Location = new System.Drawing.Point(192, 348);
+            this.nubtnCadastro.Name = "nubtnCadastro";
+            this.nubtnCadastro.Size = new System.Drawing.Size(123, 30);
+            this.nubtnCadastro.TabIndex = 17;
+            this.nubtnCadastro.Text = "Cadastrar";
+            this.nubtnCadastro.UseVisualStyleBackColor = true;
+            this.nubtnCadastro.Click += new System.EventHandler(this.nubtnCadastro_Click);
             // 
-            // checkBox1
+            // nuAdm
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.checkBox1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.checkBox1.Location = new System.Drawing.Point(548, 205);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(84, 20);
-            this.checkBox1.TabIndex = 18;
-            this.checkBox1.Text = "É  Admin";
-            this.checkBox1.UseVisualStyleBackColor = false;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            this.nuAdm.AutoSize = true;
+            this.nuAdm.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.nuAdm.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nuAdm.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.nuAdm.Location = new System.Drawing.Point(548, 205);
+            this.nuAdm.Name = "nuAdm";
+            this.nuAdm.Size = new System.Drawing.Size(84, 20);
+            this.nuAdm.TabIndex = 18;
+            this.nuAdm.Text = "É  Admin";
+            this.nuAdm.UseVisualStyleBackColor = false;
+            this.nuAdm.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
+            // nuData
+            // 
+            this.nuData.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.nuData.Location = new System.Drawing.Point(192, 143);
+            this.nuData.Name = "nuData";
+            this.nuData.Size = new System.Drawing.Size(200, 20);
+            this.nuData.TabIndex = 19;
+            this.nuData.TabStop = false;
+            this.nuData.Value = new System.DateTime(2020, 6, 16, 17, 33, 4, 0);
+            this.nuData.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // Novo_Usuario___AirSystem
             // 
@@ -235,18 +252,19 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(693, 423);
-            this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.nuData);
+            this.Controls.Add(this.nuAdm);
+            this.Controls.Add(this.nubtnCadastro);
+            this.Controls.Add(this.nubtnDeletar);
+            this.Controls.Add(this.nubtnAlterar);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.texUsuario);
+            this.Controls.Add(this.nuSobrenome);
+            this.Controls.Add(this.nuNome);
+            this.Controls.Add(this.nuNumero);
+            this.Controls.Add(this.nuRua);
+            this.Controls.Add(this.nuSenha);
+            this.Controls.Add(this.nuUsuario);
+            this.Controls.Add(this.nuConfSenha);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -257,6 +275,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Novo_Usuario___AirSystem";
             this.Text = "NovoUsuario_AirSystem";
+            this.Load += new System.EventHandler(this.Novo_Usuario___AirSystem_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -272,17 +291,18 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox texUsuario;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox nuConfSenha;
+        private System.Windows.Forms.TextBox nuUsuario;
+        private System.Windows.Forms.TextBox nuSenha;
+        private System.Windows.Forms.TextBox nuRua;
+        private System.Windows.Forms.TextBox nuNumero;
+        private System.Windows.Forms.TextBox nuNome;
+        private System.Windows.Forms.TextBox nuSobrenome;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Button nubtnAlterar;
+        private System.Windows.Forms.Button nubtnDeletar;
+        private System.Windows.Forms.Button nubtnCadastro;
+        private System.Windows.Forms.CheckBox nuAdm;
+        private System.Windows.Forms.DateTimePicker nuData;
     }
 }

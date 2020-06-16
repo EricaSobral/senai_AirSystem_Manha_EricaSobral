@@ -19,7 +19,12 @@ namespace AirSystem.Views
 
         private void button1_Click(object sender, EventArgs e)
         {
-             
+            new TelaAdministrativo();
+        }
+
+        private void TelaAdministrativo_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

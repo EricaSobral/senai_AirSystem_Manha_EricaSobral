@@ -9,15 +9,15 @@ namespace AirSystem.Repository
 {
     class UsuarioRepository
     {
-        private static List<Usuario> ListUser;
+        private static List<Usuario> ListUsuario;
 
         public UsuarioRepository()
         {
-            if(ListUser == null)
+            if(ListUsuario == null)
             {
-                ListUser = new List<Usuario>();
+                ListUsuario = new List<Usuario>();
 
-                ListUser.Add(new Usuario
+                ListUsuario.Add(new Usuario
                 {
                     Nome = "Erica",
                     Sobrenome = "Sobral",
@@ -28,27 +28,32 @@ namespace AirSystem.Repository
                     Senha = "adm",
                     TipoUsuario = true 
                 });
-                ListUser.Add(new Usuario
+                ListUsuario.Add(new Usuario
                 {
                     Nome = "Alexia",
                     Sobrenome = "Vitoria",
                     Nascimento = Convert.ToDateTime("30/04/2001"),
                     Endereco = "Rua Alexia",
                     Numero = "190",
-                    NomeUsuario = "comum",
-                    Senha = "comum",
+                    NomeUsuario = "alexia",
+                    Senha = "er",
                     TipoUsuario = false 
                 });
             }
         }
         public List<Usuario> Listar()
             {
-            return ListUser;
+            return ListUsuario;
             }
 
-        public Usuario LoginUsuario(string Nome, string Senha)
+        public Usuario LoginUsuario(string nome, string senha)
         {
-            return ListUser.Find(u => u.Nome == Nome && u.Senha == Senha);
+            return ListUsuario.Find(u => u.Nome == nome && u.Senha == senha);
+        }
+
+        public void CadastrarUsuario (Usuario novoUsuario)
+        {
+            ListUsuario.Add(novoUsuario);
         }
     }
 }

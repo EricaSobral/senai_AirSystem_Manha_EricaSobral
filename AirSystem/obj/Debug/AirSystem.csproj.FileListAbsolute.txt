@@ -4,7 +4,6 @@ C:\Users\erica\Desktop\Técnico\Xamarim\senai_AirSystem_Manha_EricaSobral\AirSys
 C:\Users\erica\Desktop\Técnico\Xamarim\senai_AirSystem_Manha_EricaSobral\AirSystem\obj\Debug\AirSystem.csprojAssemblyReference.cache
 C:\Users\erica\Desktop\Técnico\Xamarim\senai_AirSystem_Manha_EricaSobral\AirSystem\obj\Debug\AirSystem.Properties.Resources.resources
 C:\Users\erica\Desktop\Técnico\Xamarim\senai_AirSystem_Manha_EricaSobral\AirSystem\obj\Debug\AirSystem.Views.ListarUsuario.resources
-C:\Users\erica\Desktop\Técnico\Xamarim\senai_AirSystem_Manha_EricaSobral\AirSystem\obj\Debug\AirSystem.Views.Login_AirSysten.resources
 C:\Users\erica\Desktop\Técnico\Xamarim\senai_AirSystem_Manha_EricaSobral\AirSystem\obj\Debug\AirSystem.Views.Novo_Usuario___AirSystem.resources
 C:\Users\erica\Desktop\Técnico\Xamarim\senai_AirSystem_Manha_EricaSobral\AirSystem\obj\Debug\AirSystem.Views.TelaAdministrativo.resources
 C:\Users\erica\Desktop\Técnico\Xamarim\senai_AirSystem_Manha_EricaSobral\AirSystem\obj\Debug\AirSystem.Views.TelaUsuarioComum.resources
@@ -12,3 +11,4 @@ C:\Users\erica\Desktop\Técnico\Xamarim\senai_AirSystem_Manha_EricaSobral\AirSys
 C:\Users\erica\Desktop\Técnico\Xamarim\senai_AirSystem_Manha_EricaSobral\AirSystem\obj\Debug\AirSystem.csproj.CoreCompileInputs.cache
 C:\Users\erica\Desktop\Técnico\Xamarim\senai_AirSystem_Manha_EricaSobral\AirSystem\obj\Debug\AirSystem.exe
 C:\Users\erica\Desktop\Técnico\Xamarim\senai_AirSystem_Manha_EricaSobral\AirSystem\obj\Debug\AirSystem.pdb
+C:\Users\erica\Desktop\Técnico\Xamarim\senai_AirSystem_Manha_EricaSobral\AirSystem\obj\Debug\AirSystem.Views.Login_AirSystem.resources

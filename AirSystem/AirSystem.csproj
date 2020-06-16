@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -46,19 +47,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\Usuario.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\UsuarioRepository.cs" />
+    <Compile Include="Utils.cs" />
     <Compile Include="Views\ListarUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\ListarUsuario.Designer.cs">
       <DependentUpon>ListarUsuario.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Login_AirSysten.cs">
+    <Compile Include="Views\Login_AirSystem.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\Login_AirSysten.Designer.cs">
-      <DependentUpon>Login_AirSysten.cs</DependentUpon>
+    <Compile Include="Views\Login_AirSystem.Designer.cs">
+      <DependentUpon>Login_AirSystem.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\NovoUsuario_AirSystem.cs">
       <SubType>Form</SubType>
@@ -90,8 +94,8 @@
     <EmbeddedResource Include="Views\ListarUsuario.resx">
       <DependentUpon>ListarUsuario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\Login_AirSysten.resx">
-      <DependentUpon>Login_AirSysten.cs</DependentUpon>
+    <EmbeddedResource Include="Views\Login_AirSystem.resx">
+      <DependentUpon>Login_AirSystem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\NovoUsuario_AirSystem.resx">
       <DependentUpon>NovoUsuario_AirSystem.cs</DependentUpon>

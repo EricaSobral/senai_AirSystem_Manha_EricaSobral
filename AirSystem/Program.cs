@@ -17,7 +17,7 @@ namespace AirSystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Login_AirSysten());
+            Application.Run(new Login_AirSystem());
         }
     }
 }

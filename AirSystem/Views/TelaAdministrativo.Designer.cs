@@ -100,6 +100,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "TelaAdministrativo";
             this.Text = "TelaAdministrativo";
+            this.Load += new System.EventHandler(this.TelaAdministrativo_Load);
             this.ResumeLayout(false);
 
         }
